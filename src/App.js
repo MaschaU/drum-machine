@@ -17,6 +17,7 @@ class App extends React.Component {
           <Drumpad
           id={data.id}
           keyTrigger={data.keyTrigger}
+          src={data.soundLink}
           />
         ))}
 
