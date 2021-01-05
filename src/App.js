@@ -7,7 +7,7 @@ import Drumpad from "./Drumpad";
 
 class App extends React.Component {
   state = {
-      display: ""
+      display: "Click the pad or press the key!"
     }
 
     handleDisplay = display => this.setState({display});

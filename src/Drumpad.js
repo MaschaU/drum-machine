@@ -4,7 +4,8 @@ import React from 'react';
 class Drumpad extends React.Component {
   // using lifecycle methods for key event listeners
   componentDidMount() {
-    document.addEventListener("keydown", this.handleKeyDown)
+    document.addEventListener("keydown", this.handleKeyDown);
+    window.focus(); // so the keys are working immediately on (re)load
   }
 
   componentWillUnmount() {
