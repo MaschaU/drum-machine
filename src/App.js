@@ -7,6 +7,8 @@ import Drumpad from "./Drumpad";
 
 class App extends React.Component {
 
+  
+
 
   render() {
     return (
@@ -18,6 +20,7 @@ class App extends React.Component {
           id={data.id}
           keyTrigger={data.keyTrigger}
           src={data.soundLink}
+          
           />
         ))}
 
