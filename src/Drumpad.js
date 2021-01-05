@@ -4,9 +4,10 @@ import React from 'react';
 class Drumpad extends React.Component {
 
   handleClick = () => {
-    this.audio.play()
+    this.audio.play();
     // so we can hit one audio right after another
-    this.audio.currentTime = 0
+    this.audio.currentTime = 0;
+    this.props.handleDisplay(this.props.id);
   }
   render() {
     return(
@@ -15,7 +16,7 @@ class Drumpad extends React.Component {
         id={this.props.id}
         onClick={this.handleClick}
       >
-        <p>{this.props.keyTrigger}</p>
+        <h1>{this.props.keyTrigger}</h1>
         <audio
           ref={ref => this.audio = ref}
           className="clip" 
