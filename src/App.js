@@ -1,14 +1,29 @@
 import React from 'react';
 import './App.css';
+import SoundData from "./SoundData";
+import Drumpad from "./Drumpad";
 
 
-export default class App extends React.Component{
-  render(){
+
+class App extends React.Component {
+
+
+  render() {
     return (
-      <div className="App">
-       <h1>'s all good, man!</h1>
-      </div>
-    );}
-  }
+      <div id="drum-machine">
+        <div id="display"></div>
+        {/*mapping over the data from SoundData.js*/}
+        {SoundData.map(data => (
+          <Drumpad
+          id={data.id}
+          keyTrigger={data.keyTrigger}
+          />
+        ))}
 
+      </div>
+    );
+  }
+}
+  
+export default App;
 
