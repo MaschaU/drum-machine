@@ -20,7 +20,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+#display {
+  width: 50vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

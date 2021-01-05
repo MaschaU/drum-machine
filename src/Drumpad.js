@@ -2,6 +2,23 @@ import React from 'react';
 
 
 class Drumpad extends React.Component {
+  // using lifecycle methods for key event listeners
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyDown)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyDown);
+  }
+
+  handleKeyDown = e => {
+    if(e.keyCode === this.props.keyTrigger.charCodeAt()) {
+      this.audio.play();
+      this.audio.currentTime = 0;
+      this.props.handleDisplay(this.props.id);
+    }
+  }
+
 
   handleClick = () => {
     this.audio.play();
