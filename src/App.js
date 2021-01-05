@@ -15,13 +15,15 @@ class App extends React.Component {
       <div id="drum-machine">
         <div id="display"></div>
         {/*mapping over the data from SoundData.js*/}
-        {SoundData.map(data => (
-          <Drumpad
-          id={data.id}
-          keyTrigger={data.keyTrigger}
-          soundLink={data.soundLink}
-          />
-          ))}
+        <div id="drum-pads">
+          {SoundData.map(data => (
+            <Drumpad
+            id={data.id}
+            keyTrigger={data.keyTrigger}
+            soundLink={data.soundLink}
+            />
+            ))}
+        </div>
         
       </div>
     );

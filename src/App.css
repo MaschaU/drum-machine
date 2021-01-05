@@ -2,14 +2,22 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#drum-pads {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button {
-  height: 50px;
-  width: 50px;
+.drum-pad {
+  border: 3px solid black;
+  height: 15vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
