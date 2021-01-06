@@ -2,24 +2,48 @@
   text-align: center;
 }
 
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 #drum-pads {
-  height: 50vh;
-  width: 90vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 52vh;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw;
+  grid-template-rows: 15vh 15vh 15vh;
+  column-gap: 25px;
+  row-gap: 10px;
+  background-color: black;
+  align-self: center;
+  align-items: center;
+  
+  
 }
 
 .drum-pad {
-  border: 3px solid black;
+  border: 1px solid #1df7f7;
+  border-radius: 12px;
   margin: 10px;
-  height: 15vh;
-  width: 15vw;
+  margin-top: 50px;
+  height: 14vh;
+  width: 14vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #000000;
+  background: -moz-radial-gradient(center, #000000 0%, #1C6EA4 50%, #030B0B 100%);
+  background: -webkit-radial-gradient(center, #000000 0%, #1C6EA4 50%, #030B0B 100%);
+  background: radial-gradient(ellipse at center, #000000 0%, #1C6EA4 50%, #030B0B 100%);
+  
+}
+
+.keyes {
+  color:#1df7f7;
+  font-size: 3rem;
 }
 
 #display {

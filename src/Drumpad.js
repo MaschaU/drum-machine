@@ -2,6 +2,7 @@ import React from 'react';
 
 
 class Drumpad extends React.Component {
+
   // using lifecycle methods for key event listeners
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyDown);
@@ -34,7 +35,7 @@ class Drumpad extends React.Component {
         id={this.props.id}
         onClick={this.handleClick}
       >
-        <h1>{this.props.keyTrigger}</h1>
+        <h1 className="keyes">{this.props.keyTrigger}</h1>
         <audio
           ref={ref => this.audio = ref}
           className="clip" 

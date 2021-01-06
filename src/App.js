@@ -7,7 +7,7 @@ import Drumpad from "./Drumpad";
 
 class App extends React.Component {
   state = {
-      display: "Click the pad or press the key!"
+      display: "Click the pad or press the key!",
     }
 
     handleDisplay = display => this.setState({display});
@@ -15,6 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="drum-machine">
+        <h1 className="header">Drum Machine under construction</h1>
         <div id="display">{this.state.display}</div>
         {/*mapping over the data from SoundData.js*/}
         <div id="drum-pads">
