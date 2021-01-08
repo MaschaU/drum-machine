@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="drum-machine">
-        <h1 className="header">Drum Machine under construction</h1>
+        <h1 className="header">Drum Machine</h1>
         <div id="display">{this.state.display}</div>
         {/*mapping over data from SoundData.js*/}
         <div id="drum-pads">

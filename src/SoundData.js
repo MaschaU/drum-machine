@@ -1,25 +1,25 @@
 const soundData = [
     {
         keyTrigger: "Q",
-        id: "Heater-1",
+        id: "Heater 1",
         unicode: 81,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
     },
     {
         keyTrigger: "W",
-        id: "Heater-2",
+        id: "Heater 2",
         unicode: 87,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
     },
     {
         keyTrigger: "E",
-        id: "Heater-3",
+        id: "Heater 3",
         unicode: 69,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
     },
     {
         keyTrigger: "A",
-        id: "Heater-4",
+        id: "Heater 4",
         unicode: 65,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
     },
@@ -31,13 +31,13 @@ const soundData = [
     },
     {
         keyTrigger: "D",
-        id: "Open-HH",
+        id: "Open HH",
         unicode: 68,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
     },
     {
         keyTrigger: "Z",
-        id: "Kick-n'-Hat",
+        id: "Kick n' Hat",
         unicode: 90,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
     },
@@ -49,7 +49,7 @@ const soundData = [
     },
     {
         keyTrigger: "C",
-        id: "Closed-HH",
+        id: "Closed HH",
         unicode: 67,
         soundLink: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
     },

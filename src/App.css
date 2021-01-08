@@ -1,33 +1,49 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-color: rgb(1, 8, 14);
 }
 
 .header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
+  margin-top: 0;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 13rem;
+  color: rgb(233, 16, 88);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  text-shadow: 0.5px 0.5px #1df7f7;
+}
+
+#drum-machine {
+  height: 100vh;
 }
 
 #drum-pads {
-  width: 50vw;
+  width: 36vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 3, 3);
+  border: 0.5px solid #05cfcf;
   align-self: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .drum-pad {
   border: 1px solid #1df7f7;
   border-radius: 12px;
   margin: 10px;
-  height: 13vh;
-  width: 13vw;
+  height: 10vh;
+  width: 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +57,9 @@
 .keyes {
   color:#1df7f7;
   font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 1px 1px  rgb(233, 16, 88);
+  
 }
 
 #display {
@@ -49,34 +68,9 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
+  color: rgb(233, 16, 88);
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
