@@ -17,7 +17,7 @@ class App extends React.Component {
       <div id="drum-machine">
         <h1 className="header">Drum Machine under construction</h1>
         <div id="display">{this.state.display}</div>
-        {/*mapping over the data from SoundData.js*/}
+        {/*mapping over data from SoundData.js*/}
         <div id="drum-pads">
           {SoundData.map(data => (
             <Drumpad
